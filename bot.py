@@ -143,14 +143,14 @@ async def cmd_start(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     else:
         await update.message.reply_text(
             "👋 Привет, " + user.first_name + "!\n\n"
-            "Добро пожаловать в бот скидок <b>ЦДМ</b> и фудхола <b>НеДетский</b>.\n\n"
-            "Для получения доступа к скидкам и персональному QR-коду "
-            "подпишись на наши каналы:",
+            "Вы&nbsp;получили карту-доступ к&nbsp;программе скидок в&nbsp;<b>Центральном Детском Магазине и&nbsp;гастрономическом пространстве &laquo;НеДетский</b>&raquo;..\n\n"
+            "Откройте мир особых привилегий для наших самых дорогих гостей. "
+            "Сгенерируйте QR-код, предъявите его на&nbsp;кассе и&nbsp;получите индивидуальную скидку до&nbsp;30%. Предложения будут обновляться"
+            "Для регистрации подпишись на наши каналы:",
             parse_mode="HTML",
             reply_markup=subscribe_keyboard(),
         )
-
-
+        
 async def cb_check_sub(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
     await query.answer()
