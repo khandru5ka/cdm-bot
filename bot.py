@@ -33,13 +33,13 @@ DB_PATH   = "users.db"
 CATEGORIES = {
     "stores":  "🏪 Магазины ЦДМ",
     "corners": "🍽 Корнеры НеДетского",
-    "cafes":   "☕️ Кафе и рестораны",
+    #"cafes":   "☕️ Кафе и рестораны",
 }
 
 SHEET_TABS = {
     "stores":  "Магазины ЦДМ",
     "corners": "Корнеры НеДетского",
-    "cafes":   "Кафе и рестораны",
+    #"cafes":   "Кафе и рестораны",
 }
 
 _NOT_MEMBER = {"left", "kicked"}
